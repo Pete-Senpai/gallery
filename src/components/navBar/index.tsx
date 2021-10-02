@@ -1,8 +1,9 @@
 import React from 'react';
-import { AppBar, Toolbar, IconButton, List, ListItem, ListItemText, makeStyles, Container } from "@material-ui/core";
-import { Home } from "@material-ui/icons";
+import { AppBar, Toolbar, IconButton, List, ListItem, ListItemText, Container } from "@mui/material";
+import { Home } from "@mui/icons-material";
 import SearchBar from '../searchBar/SearchBar';
 import { useHistory } from 'react-router-dom';
+import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles({
     navbarDisplayFlex: {
@@ -33,7 +34,12 @@ const NavBar = () => {
         <AppBar position="static">
             <Toolbar>
                 <Container maxWidth="xl" className={classes.navbarDisplayFlex}>
-                    <IconButton onClick={() => history.push('/')} edge="start" color="inherit" aria-label="home">
+                    <IconButton
+                        onClick={() => history.push('/')}
+                        edge="start"
+                        color="inherit"
+                        aria-label="home"
+                        size="large">
                         <Home fontSize="large" />
                     </IconButton>
                     <List component="nav" aria-labelledby="main navigation" className={classes.navDisplayFlex}>
