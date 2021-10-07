@@ -31,7 +31,7 @@ const NavBar = () => {
     const classes = useStyles();
     const history = useHistory();
     return (
-        <AppBar position="static">
+        <AppBar position="sticky">
             <Toolbar>
                 <Container maxWidth="xl" className={classes.navbarDisplayFlex}>
                     <IconButton
