@@ -1,6 +1,6 @@
 import React from 'react';
 import { alpha, Theme } from '@mui/material/styles';
-import { InputBase } from '@mui/material';
+import { Box, InputBase } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import { makeStyles, createStyles } from '@mui/styles';
 
@@ -51,10 +51,10 @@ const useStyles = makeStyles((theme: Theme) =>
 const SearchBar = () => {
     const classes = useStyles();
     return (
-        <div className={classes.search}>
-            <div className={classes.searchIcon}>
+        <Box className={classes.search}>
+            <Box className={classes.searchIcon}>
               <SearchIcon />
-            </div>
+            </Box>
             <InputBase
               placeholder="Search…"
               classes={{
@@ -63,7 +63,7 @@ const SearchBar = () => {
               }}
               inputProps={{ 'aria-label': 'search' }}
             />
-          </div>
+        </Box>
     );
 };
 

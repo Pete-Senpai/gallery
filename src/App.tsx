@@ -1,28 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { createTheme, ThemeProvider, Theme, StyledEngineProvider } from '@mui/material/styles';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { purple } from '@mui/material/colors';
 import Home from 'pages/home';
 import Gallery from 'pages/gallery';
 import Contact from 'pages/contact';
 import FAQ from 'pages/faq';
 import NavBar from 'components/navBar';
-import { makeStyles } from '@mui/styles';
-
-
-declare module '@mui/styles/defaultTheme' {
-  // eslint-disable-next-line @typescript-eslint/no-empty-interface
-  interface DefaultTheme extends Theme {}
-}
-
-
-const useStyles = makeStyles({
-  content: {
-    display: 'flex',
-    width: '100%',
-    height: '100%'
-  }
-});
+import Footer from 'components/footer';
+import { Box, CssBaseline } from '@mui/material';
 
 const theme = createTheme(({
   palette: {
@@ -36,26 +22,24 @@ const theme = createTheme(({
 }));
 
 const App = () => {
-  const styles = useStyles();
-
   return (
-    <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
         <BrowserRouter>
-          <div>
+          <Box>
+            <CssBaseline />
             <NavBar />
-            <div className={styles.content}>
+            <Box component="main" sx={{display: "flex", width: "100%", height: "100%"}}>
               <Switch>
                 <Route path='/' exact component={Home} />
                 <Route path='/gallery' exact component={Gallery} />
                 <Route path='/contact' exact component={Contact} />
                 <Route path='/faq' exact component={FAQ} />
               </Switch>
-            </div>
-          </div>
+            </Box>
+            <Footer />
+          </Box>
         </BrowserRouter>
       </ThemeProvider>
-    </StyledEngineProvider>
   );
 };
 

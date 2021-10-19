@@ -1,16 +1,14 @@
-import { Box, Card, CardMedia, Container, CssBaseline, Grid, Typography } from '@mui/material';
+import { Box, Card, CardMedia, Container, Grid, Typography } from '@mui/material';
 import React from 'react';
 
 const Home = () => {
     return (
-        <React.Fragment>
-            <CssBaseline />
             <Container>
                 <Box m={2} pt={3} px={2} sx={{ bgcolor: '#cfe8fc', height: "25%", width: "100%" }}>
                     <Grid container spacing={2}>
                         <Grid item xs={6}>
-                            <Typography align="center">
-                                <h1>First header</h1>
+                            <Typography align="center" borderBottom={1}>
+                                <h1>Pet Portraits & Commissions</h1>
                             </Typography>
                             <Typography>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -43,8 +41,8 @@ const Home = () => {
                             </Card>
                         </Grid>
                         <Grid item xs={6}>
-                            <Typography align="center">
-                                <h1>Second header</h1>
+                            <Typography align="center" borderBottom={1}>
+                                <h1>Original Artwork</h1>
                             </Typography>
                             <Typography>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -55,8 +53,8 @@ const Home = () => {
                 <Box m={2} pt={3} px={2} sx={{ bgcolor: '#cfe8fc', height: "25%", width: "100%" }}>
                     <Grid container spacing={2}>
                         <Grid item xs={6}>
-                            <Typography align="center">
-                                <h1>Third header</h1>
+                            <Typography align="center" borderBottom={1}>
+                                <h1>Gallery</h1>
                             </Typography>
                             <Typography>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -89,8 +87,8 @@ const Home = () => {
                             </Card>
                         </Grid>
                         <Grid item xs={6}>
-                            <Typography align="center">
-                                <h1>Fourth header</h1>
+                            <Typography align="center" borderBottom={1}>
+                                <h1>Prints</h1>
                             </Typography>
                             <Typography>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -99,7 +97,6 @@ const Home = () => {
                     </Grid>
                 </Box>
             </Container>
-        </React.Fragment>
     );
 };
 
