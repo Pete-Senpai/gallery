@@ -1,7 +1,6 @@
 import React from 'react';
 import { AppBar, Toolbar, IconButton, List, ListItem, ListItemText, Container, Typography, Box } from "@mui/material";
 import { Home } from "@mui/icons-material";
-import SearchBar from '../searchBar/SearchBar';
 import { useHistory } from 'react-router-dom';
 
 const navLinks = [
@@ -35,9 +34,6 @@ const NavBar = () => {
                                 </ListItem>
                             </Box>
                         ))}
-                        <ListItem>
-                            <SearchBar />
-                        </ListItem>
                     </List>
                 </Container>
             </Toolbar>
