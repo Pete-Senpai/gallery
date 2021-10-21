@@ -5,7 +5,9 @@ import { purple } from '@mui/material/colors';
 import Home from 'pages/home';
 import Gallery from 'pages/gallery';
 import Contact from 'pages/contact';
-import FAQ from 'pages/faq';
+import About from 'pages/about';
+import OriginalArtwork from 'pages/original_artwork';
+import PetPortraits from 'pages/pet_portraits';
 import NavBar from 'components/navBar';
 import Footer from 'components/footer';
 import { Box, CssBaseline } from '@mui/material';
@@ -31,9 +33,11 @@ const App = () => {
             <Box component="main" sx={{display: "flex", width: "100%", height: "100%"}}>
               <Switch>
                 <Route path='/' exact component={Home} />
+                <Route path='/about' exact component={About} />
+                <Route path='/original_artwork' exact component={OriginalArtwork} />
+                <Route path='/pet_portraits' exact component={PetPortraits} />
                 <Route path='/gallery' exact component={Gallery} />
                 <Route path='/contact' exact component={Contact} />
-                <Route path='/faq' exact component={FAQ} />
               </Switch>
             </Box>
             <Footer />

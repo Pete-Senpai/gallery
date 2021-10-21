@@ -30,8 +30,7 @@ const Footer = () => {
                             </Box>
                         </Grid>
                         <Grid item xs={12} sm={4}>
-                            <Box borderBottom={1}>FAQ</Box>
-                            <Button href="/faq" variant="outlined">
+                            <Button href="/about" variant="outlined">
                                 FAQ
                             </Button>
                         </Grid>

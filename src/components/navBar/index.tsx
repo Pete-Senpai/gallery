@@ -5,9 +5,11 @@ import SearchBar from '../searchBar/SearchBar';
 import { useHistory } from 'react-router-dom';
 
 const navLinks = [
+    { title: `about`, path: `/about` },
+    { title: `original artwork`, path: `/original_artwork` },
+    { title: `pet portraits`, path: `/pet_portraits`},
     { title: `gallery`, path: `/gallery` },
-    { title: `contact`, path: `/contact` },
-    { title: `faq`, path: `/faq` },
+    { title: `contact`, path: `/contact` }
 ];
 
 const NavBar = () => {
@@ -24,10 +26,10 @@ const NavBar = () => {
                         size="large">
                         <Home fontSize="large" />
                     </IconButton>
-                    <Typography>Sarah-Jane Art</Typography>
+                    <Typography sx={{alignSelf: "center", fontSize: 30, borderBottom: 2}}>Sarah-Jane Art</Typography>
                     <List component="nav" aria-labelledby="main navigation" sx={{display: "flex", justifyContent: "space-between"}}>
                         {navLinks.map(({ title, path }) => (
-                            <Box onClick={() => history.push(path)} key={title} sx={{textDecoration: "none", textTransform: "uppercase", color: "white"}}>
+                            <Box onClick={() => history.push(path)} key={title} sx={{textDecoration: "none", textTransform: "uppercase", color: "white", alignSelf: "center"}}>
                                 <ListItem button>
                                     <ListItemText primary={title} />
                                 </ListItem>
