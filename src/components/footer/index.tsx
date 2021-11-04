@@ -5,8 +5,8 @@ const Footer = () => {
     return(
         <footer>
             <Box 
-                px={{xs: 3, sm: 10}}
-                py={{xs: 5, sm: 10}}
+                px={{xs: 1, sm: 1}}
+                py={{xs: 1, sm: 2}}
                 bgcolor="text.secondary" 
                 color="white"
                 position="sticky"

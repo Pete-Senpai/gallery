@@ -4,7 +4,7 @@ import React from 'react';
 const Home = () => {
     return (
         <Container>
-            <Box m={2} pt={3} px={2} sx={{ bgcolor: '#cfe8fc', height: '500px', width: "100%" }}>
+            <Box m={2} pt={3} px={2} sx={{ bgcolor: '#cfe8fc', height: '600px', width: "100%" }}>
                 <Grid container spacing={2}>
                     <Grid item xs={6}>
                         <Typography align="center" borderBottom={1}>
@@ -20,7 +20,7 @@ const Home = () => {
                         <Card>
                             <CardMedia
                                 component="img"
-                                height="500px"
+                                height= "100%"
                                 image={"/images/Pets/17846820302631474.jpg"}
                                 alt="photo"
                             />
@@ -28,12 +28,13 @@ const Home = () => {
                     </Grid>
                 </Grid>
             </Box>
-            <Box m={2} pt={3} px={2} sx={{ bgcolor: '#cfe8fc', height: '500px', width: "100%" }}>
+            <Box m={2} pt={3} px={2} sx={{ bgcolor: '#cfe8fc', height: '600px', width: "100%" }}>
                 <Grid container spacing ={2}>
                     <Grid item xs={6}>
                         <Card>
                             <CardMedia 
                                 component="img"
+                                height= "100%"
                                 image={"/images/Abstract/Neptune.jpg"}
                                 alt="photo"
                             />
@@ -50,7 +51,7 @@ const Home = () => {
                     </Grid>
                 </Grid>
             </Box>
-            <Box m={2} pt={3} px={2} sx={{ bgcolor: '#cfe8fc', height: '500px', width: "100%" }}>
+            <Box m={2} pt={3} px={2} sx={{ bgcolor: '#cfe8fc', height: '600px', width: "100%" }}>
                 <Grid container spacing={2}>
                     <Grid item xs={6}>
                         <Typography align="center" borderBottom={1}>
@@ -64,6 +65,7 @@ const Home = () => {
                         <Card>
                             <CardMedia 
                                 component="img"
+                                height= "100%"
                                 image={"/images/lion.jpg"}
                                 alt="photo"
                             />
@@ -71,12 +73,13 @@ const Home = () => {
                     </Grid>
                 </Grid>
             </Box>
-            <Box m={2} pt={3} px={2} sx={{ bgcolor: '#cfe8fc', height: '500px', width: "100%" }}>
+            <Box m={2} pt={3} px={2} sx={{ bgcolor: '#cfe8fc', height: '600px', width: "100%" }}>
                 <Grid container spacing ={2}>
                     <Grid item xs={6}>
                         <Card>
                             <CardMedia 
                                 component="img"
+                                height= "100%"
                                 image={"/images/Pets/17895221188716237.jpg"}
                                 alt="photo"
                             />
