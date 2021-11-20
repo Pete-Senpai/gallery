@@ -2,6 +2,7 @@ import React from 'react';
 import { AppBar, Toolbar, IconButton, List, ListItem, ListItemText, Container, Typography, Box } from "@mui/material";
 import { Home } from "@mui/icons-material";
 import { useHistory } from 'react-router-dom';
+import "@fontsource/niconne/400.css";
 
 const navLinks = [
     { title: `about`, path: `/about` },
@@ -25,7 +26,7 @@ const NavBar = () => {
                         size="large">
                         <Home fontSize="large" />
                     </IconButton>
-                    <Typography sx={{alignSelf: "center", fontSize: 30, borderBottom: 2}}>Sarah-Jane Art</Typography>
+                    <Typography sx={{alignSelf: "center", fontSize: 30, borderBottom: 2, fontFamily: "Niconne"}}>Sarah-Jane Art</Typography>
                     <List component="nav" aria-labelledby="main navigation" sx={{display: "flex", justifyContent: "space-between"}}>
                         {navLinks.map(({ title, path }) => (
                             <Box onClick={() => history.push(path)} key={title} sx={{textDecoration: "none", textTransform: "uppercase", color: "white", alignSelf: "center"}}>

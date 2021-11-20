@@ -19,7 +19,7 @@ const About = () => {
                         <Typography align="center" borderBottom={1}>
                             <h1>About me</h1>
                         </Typography>
-                        <Typography>
+                        <Typography fontFamily="Casual" fontSize={18}>
                             <p>I'm 32 year old self taught artist,  based on the south coast of England, who has always had a passion for art.</p>
                             <p>I started my venture into art at a very young age and have continued to follow my passion and love for all things art into my adult years. </p>
                             <p>Unlike many artists, I don't have a preferred subject or medium that I like to follow. To me, art is about the consistent growth of one's skills, and always looking to improve, and take on new challenges.</p>

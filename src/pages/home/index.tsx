@@ -8,7 +8,7 @@ const HomePageBox = (props: { header: string, children: any, imageSrc: string, i
             <Typography align="center" borderBottom={1}>
                 <h1>{props.header}</h1>
             </Typography>
-            <Typography>
+            <Typography fontFamily="Casual" fontSize={18} >
                 {props.children}
             </Typography>
             <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "center", alignItems: "end" }}>
