@@ -29,6 +29,25 @@ const About = () => {
                     </Grid>
                 </Grid>
             </Box>
+            <Box id="faq" m={2} pt={3} px={2} sx={{ bgcolor: '#cfe8fc', height: '800px', width: "100%", justifyContent: "center", alignItems: "center"}}>
+                <Typography align="center" borderBottom={2}>
+                    <h1>FAQ</h1>
+                </Typography>
+                <Typography>
+                    <h2>How much is delivery within the UK?</h2>
+                    <p>Shipping is 99p when £3.50 or less is spent, £2.99 for orders between £3.50 and £50, then free when £50 or more is spent.</p>
+                    <h2>Do you provide International delivery?</h2>
+                    <p>Yes I do. Standard international shipping is £9.99. Orders below £5 are £4 to ship.</p>
+                    <h2>What is your returns policy?</h2>
+                    <p>If you are unhappy with an item, or the item is damaged in transit, please contact me and I can either send you out a replacement, or give you a full refund.</p>
+                    <h2>How do I order a pet portrait?</h2>
+                    <p>To order a pet portrait please email me at email.sarahjanearts@gmail.com. I do require a 50% deposit before starting the portrait, which we can arrange via email.</p>
+                    <h2>I am interested in purchasing one of your original artworks. How do I do this?</h2>
+                    <p>You can purchase my originals directly on my website. If you have any further questions please email me at email.sarahjanearts@gmail.com .If you require international shipping for an original artwork, please contact me before purchasing as there will be an additional shipping cost.</p>
+                    <h2>I would like my pet portrait framed, do you offer framing?</h2>
+                    <p>Yes I do. When ordering your pet portrait we can discuss framing options and I can give you a quote.</p>
+                </Typography>
+            </Box>
         </Container>
     );
 };

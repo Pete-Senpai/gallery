@@ -30,7 +30,7 @@ const App = () => {
           <Box>
             <CssBaseline />
             <NavBar />
-            <Box component="main" sx={{display: "flex", width: "100%", height: "100%"}}>
+            <Box component="main" sx={{display: "flex", width: "100%", height: "100%", backgroundColor: '#c9c6c6'}}>
               <Switch>
                 <Route path='/' exact component={Home} />
                 <Route path='/about' exact component={About} />

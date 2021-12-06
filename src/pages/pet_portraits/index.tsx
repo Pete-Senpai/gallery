@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Typography, Card, CardMedia } from '@mui/material';
+import { Box, Container, Grid, Typography } from '@mui/material';
 import React from 'react';
 
 const PetPortraits = () => {
@@ -19,59 +19,17 @@ const PetPortraits = () => {
                     </Grid>
                     <Grid item xs={7}>
                         <Grid container spacing ={1}>
-                            <Grid item xs={4}>
-                                <Card>
-                                    <CardMedia 
-                                        component="img"
-                                        image={"/images/Pets/17846820302631474.jpg"}
-                                        alt="photo"
-                                    />
-                                </Card>
+                            <Grid item xs={6}>
+                                <img src={"/images/Pets/17846820302631474.jpg"} alt="img" height="270px" width="300px" />
                             </Grid>
-                            <Grid item xs={4}>
-                                <Card>
-                                    <CardMedia 
-                                        component="img"
-                                        image={"/images/Pets/17877850324944866_edited.jpg"}
-                                        alt="photo"
-                                    />
-                                </Card>
+                            <Grid item xs={6}>
+                                <img src={"/images/Pets/17895221188716237.jpg"} alt="img" height="270px" width="300px" />
                             </Grid>
-                            <Grid item xs={4}>
-                                <Card>
-                                    <CardMedia 
-                                        component="img"
-                                        image={"/images/Pets/17895221188716237.jpg"}
-                                        alt="photo"
-                                    />
-                                </Card>
+                            <Grid item xs={6}>
+                                <img src={"/images/Pets/18047390827061610_edited.jpg"} alt="img" height="270px" width="300px" />
                             </Grid>
-                            <Grid item xs={4}>
-                                <Card>
-                                    <CardMedia 
-                                        component="img"
-                                        image={"/images/Pets/17913331981535469_edited.jpg"}
-                                        alt="photo"
-                                    />
-                                </Card>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <Card>
-                                    <CardMedia 
-                                        component="img"
-                                        image={"/images/Pets/18047390827061610_edited.jpg"}
-                                        alt="photo"
-                                    />
-                                </Card>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <Card>
-                                    <CardMedia 
-                                        component="img"
-                                        image={"/images/Pets/18082059610221569_edited.jpg"}
-                                        alt="photo"
-                                    />
-                                </Card>
+                            <Grid item xs={6}>
+                                <img src={"/images/Pets/18082059610221569_edited.jpg"} alt="img" height="270px" width="300px" />
                             </Grid>
                         </Grid>
                     </Grid>

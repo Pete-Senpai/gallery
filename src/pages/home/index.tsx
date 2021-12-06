@@ -1,5 +1,7 @@
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
 import React from 'react';
+import Carousel from 'react-material-ui-carousel';
+import "@fontsource/niconne/400.css";
 
 const HomePageBox = (props: { header: string, children: any, imageSrc: string, isReversed?: boolean, hrefLink: string, buttonText: string }) => 
 <Box m={2} p={2} sx={{ bgcolor: '#cfe8fc', height: "450px", width: "100%" }}>
@@ -19,9 +21,27 @@ const HomePageBox = (props: { header: string, children: any, imageSrc: string, i
     </Grid>
 </Box>
 
+function mapPictures(context: __WebpackModuleApi.RequireContext) {
+    return context.keys().map((key) => context(key).default as string);
+}
+const images = mapPictures(require.context("../../../public/images/Abstract", false, /\.(png|jpe?g|svg)$/));
+
 const Home = () => {
     return (
         <Container>
+            <Box m={2} p={2} sx={{ bgcolor: '#cfe8fc', height: "450px", width: "100%" }}>
+                <Typography borderBottom={3} fontFamily="Niconne" fontSize={30} sx={{display: "flex", justifyContent: "center"}}>
+                    <h1>Sarah-Jane Arts</h1>
+                </Typography>
+                <Typography align="center" fontFamily="Basic" fontSize={22} >
+                    <p>Artwork - Commissions - Pet Portraits</p>
+                </Typography>
+                <Carousel>
+                    {images.map(image => 
+                        <img src={image} alt="img" height="380px" width="380px" />
+                    )}
+                </Carousel>
+            </Box>
             <HomePageBox header="Pet Portraits & Commissions" hrefLink="/pet_portraits" buttonText="See Prices" imageSrc="/images/Pets/17846820302631474.jpg" isReversed>
                 <p>I adore drawing customers beloved pets, and seeing them come to life on the paper.</p>
                 <p>A pet portrait is a unique and special gift, and a wonderful way to capture a treasured memory to keep your pet with you forever.</p>

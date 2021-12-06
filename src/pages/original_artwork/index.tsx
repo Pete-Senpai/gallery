@@ -12,8 +12,8 @@ const OriginalArtwork = () => {
             <Grid container spacing={3}>
                 {images.map(image => 
                     <Grid item key={image} xs={12} md={6} lg={4}>
-                        <img src={image} alt="img" />
-                    </Grid>    
+                        <img src={image} alt="img" height="380px" width="380px" />
+                    </Grid>
                 )}
             </Grid>
         </Container>
