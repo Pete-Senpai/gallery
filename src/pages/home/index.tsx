@@ -6,7 +6,7 @@ import "@fontsource/niconne/400.css";
 const HomePageBox = (props: { header: string, children: any, imageSrc: string, isReversed?: boolean, hrefLink: string, buttonText: string }) => 
 <Box m={2} p={2} sx={{ bgcolor: '#cfe8fc', height: "450px", width: "100%" }}>
     <Grid sx={{ display: "flex", flexBasis: "50%", height: "100%", flexDirection: props.isReversed? "row-reverse" : "row" }}>
-        <Grid sx={{ display: "flex", flexDirection: "column", gap: "10px", height: "100%"}}>
+        <Grid sx={{ display: "flex", flexDirection: "column", gap: "10px", height: "100%" }}>
             <Typography align="center" borderBottom={1}>
                 <h1>{props.header}</h1>
             </Typography>
@@ -29,8 +29,8 @@ const images = mapPictures(require.context("../../../public/images/Abstract", fa
 const Home = () => {
     return (
         <Container>
-            <Box m={2} p={2} sx={{ bgcolor: '#cfe8fc', height: "450px", width: "100%" }}>
-                <Typography borderBottom={3} fontFamily="Niconne" fontSize={30} sx={{display: "flex", justifyContent: "center"}}>
+            <Box m={2} p={1} sx={{ bgcolor: '#cfe8fc', height: "450px", width: "100%",paddingTop: 0 }}>
+                <Typography borderBottom={3} fontFamily="Niconne" fontSize={30} sx={{display: "flex", position: "static", justifyContent: "center", height: "100px", paddingTop: 0}}>
                     <h1>Sarah-Jane Arts</h1>
                 </Typography>
                 <Typography align="center" fontFamily="Basic" fontSize={22} >

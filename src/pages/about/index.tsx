@@ -1,5 +1,7 @@
-import { Box, Card, CardMedia, Container, Grid, Typography } from '@mui/material';
+import { Box, Card, CardMedia, Container, Grid, IconButton, Typography } from '@mui/material';
 import React from 'react';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 const About = () => {
     return (
@@ -26,6 +28,27 @@ const About = () => {
                             <p>I offer a wide array of art work, from pet portraiture, wild life, abstracts , digital art , landscapes and botanicals. </p>
                             <p>To me, there's never a "fail" in an art piece, as for every hiccup, there's beauty and something to learn from each new experience. </p>
                         </Typography>
+                        <Grid>
+                            <Typography>My Socials:</Typography>
+                            <a href="https://www.facebook.com/SarahJaneArts/" target="_blank" rel="noreferrer">
+                                <IconButton
+                                    edge="start"
+                                    color="inherit"
+                                    aria-label="home"
+                                    size="large">
+                                    <FacebookIcon fontSize="large" />
+                                </IconButton>
+                            </a>
+                            <a href="https://www.instagram.com/sarah_jane_arts/" target="_blank" rel="noreferrer">
+                                <IconButton
+                                    edge="start"
+                                    color="inherit"
+                                    aria-label="home"
+                                    size="large">
+                                    <InstagramIcon fontSize="large" />
+                                </IconButton>
+                            </a>
+                        </Grid>
                     </Grid>
                 </Grid>
             </Box>
