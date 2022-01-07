@@ -12,7 +12,7 @@ const About = () => {
                         <Card>
                             <CardMedia 
                                 component="img"
-                                image={"/images/about_pic.jpg"}
+                                image={"/images/Default/about_pic.jpg"}
                                 alt="photo"
                             />
                         </Card>

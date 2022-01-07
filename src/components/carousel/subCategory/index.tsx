@@ -6,12 +6,12 @@ import React from 'react';
 // }
 // const images = mapPictures(require.context("../../../public/images/Abstract", false, /\.(png|jpe?g|svg)$/));
 
-const SubCategory = (props: {items: any}) => {
+const SubCategory = (props: {item1: any, item2: any, item3: any}) => {
     return (
         <Box>
-            <img src={"/images/originalArtwork/Dawn.jpg"} alt="img" height="380px" width="33%" />
-            <img src={"/images/originalArtwork/Dawn.jpg"} alt="img" height="380px" width="33%" />
-            <img src={"/images/originalArtwork/Dawn.jpg"} alt="img" height="380px" width="33%" />
+            <img src={props.item1} alt="img" height="380px" width="33%" />
+            <img src={props.item2} alt="img" height="380px" width="33%" />
+            <img src={props.item3} alt="img" height="380px" width="33%" />
         </Box>
     );
 };
