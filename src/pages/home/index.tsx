@@ -56,8 +56,8 @@ const Home = () => {
                 <p>Aside from creating pet portraits, I also enjoy producing other forms of diverse artwork, so if you're interested in seeing more, you can find these in the gallery where a substantial amount of my other creations can be viewed.</p>
             </HomePageBox>
             <HomePageBox header="Prints" hrefLink="/pet_portraits" buttonText="See Prices" imageSrc="/images/Pets/17895221188716237.jpg">
-                <p>When creating original artwork, I always ensure that I use the highest quality and archival materials. This ensures that each piece will withstand the environment the artwork is placed in, protecting it from light damage, fading and discolouration.</p>
-                <p>If you would like to purchese any of my original art pieces, or have any questions, please feel free to contact me on my email</p>
+                <p>Website feature in progress. Website feature in progress. Website feature in progress. Website feature in progress. Website feature in progress. Website feature in progress. </p>
+                
             </HomePageBox>
         </Container>
     );

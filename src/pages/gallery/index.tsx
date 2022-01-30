@@ -1,4 +1,5 @@
 import { Card, CardHeader, CardMedia, Container, Grid } from '@mui/material';
+import ExpandItem from 'components/expandItem';
 import React from 'react';
 
 const photos = [
@@ -11,7 +12,7 @@ const photos = [
         title:"Neptune"
     },
     {
-        photo:"/images/lion.jpg",
+        photo:"/images/Default/lion.jpg",
         title:"Lion"
     },
     {
@@ -23,6 +24,7 @@ const photos = [
 const Gallery = () => {
     return (
         <Container>
+            <ExpandItem />
             <Grid container spacing={3}>
                 {photos.map(photos => (
                     <Grid item key={photos.photo} xs={12} md={6} lg={4}>
