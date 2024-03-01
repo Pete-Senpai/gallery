@@ -5,7 +5,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 function mapPictures(context: __WebpackModuleApi.RequireContext) {
   return context.keys().map((key) => context(key).default as string);
 }
-const images = mapPictures(require.context("../../../public/images/Abstract", false, /\.(png|jpe?g|svg)$/));
+const images = mapPictures(require.context("../../../public/images/duck_pictures", false, /\.(png|jpe?g|svg)$/));
 
 const ExpandItem: React.FC<{}> = () => {
     const [expanded, setExpanded] = useState(false);
@@ -38,13 +38,13 @@ const ExpandItem: React.FC<{}> = () => {
           </Box>
           
           <Box flex={1}>
-            <img src={"/images/Pets/17846820302631474.jpg"} alt="img" height="350px" width="350px" />
+            <img src={"/images/duck_pictures/duck4.jpg"} alt="img" height="350px" width="350px" />
           </Box>
           <Box flex={1} sx={{justifyContent: "center", alignItems: "center", position: "relative"}}>
             <Typography>Pets</Typography>
           </Box>
           <Box ml={2} paddingRight={3}>
-            <img src={"/images/Pets/17846820302631474.jpg"} alt="img" height="350px" width="350px" />
+            <img src={"/images/duck_pictures/duck3.jpg"} alt="img" height="350px" width="350px" />
           </Box>
         </Box>
         <Collapse in={expanded} timeout="auto" unmountOnExit>
@@ -58,13 +58,13 @@ const ExpandItem: React.FC<{}> = () => {
             }
           >
             <Grid item xs={12} sm={4}>
-                <img src={"/images/Pets/17846820302631474.jpg"} alt="img" height="350px" width="350px" />
+                <img src={"/images/duck_pictures/duck4.jpg"} alt="img" height="350px" width="350px" />
             </Grid>
             <Grid item xs={12} sm={4}>
-                <img src={"/images/Pets/17846820302631474.jpg"} alt="img" height="350px" width="350px" />
+                <img src={"/images/duck_pictures/duck2.jpg"} alt="img" height="350px" width="350px" />
             </Grid>
             <Grid item xs={12} sm={4}>
-                <img src={"/images/Pets/17846820302631474.jpg"} alt="img" height="350px" width="350px" />
+                <img src={"/images/duck_pictures/duck3.jpg"} alt="img" height="350px" width="350px" />
             </Grid>
           </Grid>
           <Grid container spacing={3} p={3} pl={4}>

@@ -25,38 +25,39 @@ const HomePageBox = (props: { header: string, children: any, imageSrc: string, i
 // function mapPictures(context: __WebpackModuleApi.RequireContext) {
 //     return context.keys().map((key) => context(key).default as string);
 // }
-// const images = mapPictures(require.context("../../../public/images/Abstract", false, /\.(png|jpe?g|svg)$/));
+// const images = mapPictures(require.context("../../../public/images/duck_pictures", false, /\.(png|jpe?g|svg)$/));
 
 const Home = () => {
     return (
         <Container>
             <Box m={2} p={1} sx={{ bgcolor: '#cfe8fc', height: "570px", width: "100%",paddingTop: 0 }}>
                 <Typography variant="h1" borderBottom={3} fontFamily="Niconne" fontSize={60} sx={{display: "flex", position: "static", justifyContent: "center", height: "100px", paddingTop: 0}}>
-                    Sarah-Jane Arts
+                    Lorem Ipsum
                 </Typography>
                 <Typography align="center" fontFamily="Basic" fontSize={22} >
-                    Artwork - Commissions - Pet Portraits
+                    Lorem Ipsum
                 </Typography>
                 <Carousel>
-                    <SubCategory item1={"/images/originalArtwork/Dawn.jpg"} item2={"/images/originalArtwork/fish_copy.jpg"} item3={"/images/originalArtwork/rose_copy.jpg"}></SubCategory>
-                    <SubCategory item1={"/images/originalArtwork/seaside.jpg"} item2={"/images/originalArtwork/Snowy_hills.jpg"} item3={"/images/originalArtwork/beach1.jpg"}></SubCategory>
-                    <SubCategory item1={"/images/Abstract/Neptune.jpg"} item2={"/images/originalArtwork/Guiding_llight.jpg"} item3={"/images/originalArtwork/round_two.jpg"}></SubCategory>
+                    <SubCategory item1={"/images/duck_pictures/duck.png"} item2={"/images/duck_pictures/duck2.jpg"} item3={"/images/duck_pictures/duck3.jpg"}></SubCategory>
+                    <SubCategory item1={"/images/duck_pictures/duck.png"} item2={"/images/duck_pictures/duck2.jpg"} item3={"/images/duck_pictures/duck3.jpg"}></SubCategory>
+                    <SubCategory item1={"/images/duck_pictures/duck.png"} item2={"/images/duck_pictures/duck2.jpg"} item3={"/images/duck_pictures/duck3.jpg"}></SubCategory>
                 </Carousel>
             </Box>
-            <HomePageBox header="Pet Portraits & Commissions" hrefLink="/pet_portraits" buttonText="See Prices" imageSrc="/images/Pets/17846820302631474.jpg" isReversed>
-                <p>I adore drawing customers beloved pets, and seeing them come to life on the paper.</p>
-                <p>A pet portrait is a unique and special gift, and a wonderful way to capture a treasured memory to keep your pet with you forever.</p>
-                <p>I offer a wide variety of sizes, both framed and unframed options are available. Price range starts from £40 upwards so there is an option available for everyone. </p>
+            <HomePageBox header="Pet Portraits & Commissions" hrefLink="/pet_portraits" buttonText="See Prices" imageSrc="/images/duck_pictures/duck.png" isReversed>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
             </HomePageBox>
-            <HomePageBox header="Original Artwork" hrefLink="/original_artwork" buttonText="Original Artwork" imageSrc="/images/Abstract/Neptune.jpg">
-                <p>When creating original artwork, I always ensure that I use the highest quality and archival materials. This ensures that each piece will withstand the environment the artwork is placed in, protecting it from, light damage, fading and discolouration.</p>
-                <p>If you would like to purchase any of my original art pieces, or have any questions, please feel free to contact me on email</p>
+            <HomePageBox header="Original Artwork" hrefLink="/original_artwork" buttonText="Original Artwork" imageSrc="/images/duck_pictures/duck.png">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
             </HomePageBox>
-            <HomePageBox header="Gallery" hrefLink="/gallery" buttonText="Gallery" imageSrc="/images/Default/lion.jpg" isReversed>
-                <p>Aside from creating pet portraits, I also enjoy producing other forms of diverse artwork, so if you're interested in seeing more, you can find these in the gallery where a substantial amount of my other creations can be viewed.</p>
+            <HomePageBox header="Gallery" hrefLink="/gallery" buttonText="Gallery" imageSrc="/images/duck_pictures/duck.png" isReversed>
+                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
             </HomePageBox>
-            <HomePageBox header="Prints" hrefLink="/pet_portraits" buttonText="See Prices" imageSrc="/images/Pets/17895221188716237.jpg">
-                <p>Website feature in progress. Website feature in progress. Website feature in progress. Website feature in progress. Website feature in progress. Website feature in progress. </p>
+            <HomePageBox header="Prints" hrefLink="/pet_portraits" buttonText="See Prices" imageSrc="/images/duck_pictures/duck.png">
+                <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
                 
             </HomePageBox>
         </Container>

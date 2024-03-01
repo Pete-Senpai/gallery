@@ -4,24 +4,24 @@ import React from 'react';
 
 const photos = [
     {
-        photo:"/images/Pets/Mama_share_with_me.jpg",
-        title:"Mom Dog with her pup",
-        description: "A goldie mother and her pup, shearing a chewbone. Poloychomes and markers on A4."
+        photo:"/images/duck_pictures/duck.png",
+        title:"Lorem Ipsum",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
     },
     {
-        photo:"/images/Abstract/Neptunes_gaze.jpg",
-        title:"Neptunes gaze",
-        description: "Abstract acrylic pour on a 30 inch round canvas."
+        photo:"/images/duck_pictures/duck.png",
+        title:"Lorem Ipsum",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
     },
     {
-        photo:"/images/Default/lion.jpg",
-        title:"Lion"
-
+        photo:"/images/duck_pictures/duck.png",
+        title:"Lorem Ipsum",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
     },
     {
-        photo:"/images/Pets/Puppies_and_ties.jpg",
-        title:"Two puppies",
-        description: "Pet portrait of two cute puppy goldies, with red ribbon statement piece. A3 mixmedia paper in poloychomes."
+        photo:"/images/duck_pictures/duck.png",
+        title:"Lorem Ipsum",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
     }
 ];
 

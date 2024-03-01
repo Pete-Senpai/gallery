@@ -4,7 +4,7 @@ import React from 'react';
 // function mapPictures(context: __WebpackModuleApi.RequireContext) {
 //     return context.keys().map((key) => context(key).default as string);
 // }
-// const images = mapPictures(require.context("../../../public/images/Abstract", false, /\.(png|jpe?g|svg)$/));
+// const images = mapPictures(require.context("../../../public/images/duck_pictures", false, /\.(png|jpe?g|svg)$/));
 
 const SubCategory = (props: {item1: any, item2: any, item3: any}) => {
     return (

@@ -8,28 +8,28 @@ const PetPortraits = () => {
                 <Grid container spacing ={2}>
                     <Grid item xs={5}>
                         <Typography align="center" borderBottom={1}>
-                            <h1>Pet Portraits & Commissions</h1>
+                            <h1>Lorem Ipsum</h1>
                         </Typography>
                         <Typography>
-                            <p>During the creation process, I will keep you up to date with the progression and to make sure that you are one-hundred percent satisfied with the drawing.</p>
-                            <p>Once complete your portrait will come as unframed and unmounted, if you desire to have the picture finished with mount and frame then please contact me for a quote.</p>
-                            <p>Your completed portrait will also come with a signed certificate of authenticity.</p>
-                            <p>Required is a non refundable deposit of fifty percent of the total cost. The remainder must be paid in full before I post your portrait to you.</p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
                         </Typography>
                     </Grid>
                     <Grid item xs={7}>
                         <Grid container spacing ={1}>
                             <Grid item xs={6}>
-                                <img src={"/images/Pets/17846820302631474.jpg"} alt="img" height="270px" width="300px" />
+                                <img src={"/images/duck_pictures/duck3.jpg"} alt="img" height="270px" width="300px" />
                             </Grid>
                             <Grid item xs={6}>
-                                <img src={"/images/Pets/17895221188716237.jpg"} alt="img" height="270px" width="300px" />
+                                <img src={"/images/duck_pictures/duck3.jpg"} alt="img" height="270px" width="300px" />
                             </Grid>
                             <Grid item xs={6}>
-                                <img src={"/images/Pets/18047390827061610_edited.jpg"} alt="img" height="270px" width="300px" />
+                                <img src={"/images/duck_pictures/duck3.jpg"} alt="img" height="270px" width="300px" />
                             </Grid>
                             <Grid item xs={6}>
-                                <img src={"/images/Pets/18082059610221569_edited.jpg"} alt="img" height="270px" width="300px" />
+                                <img src={"/images/duck_pictures/duck3.jpg"} alt="img" height="270px" width="300px" />
                             </Grid>
                         </Grid>
                     </Grid>
@@ -129,14 +129,13 @@ const PetPortraits = () => {
             </Box>
             <Box id="faq" m={2} pt={1} px={2} sx={{ bgcolor: '#cfe8fc', height: '400px', width: "100%", justifyContent: "center", alignItems: "center"}}>
                 <Typography align="center" borderBottom={2}>
-                    <h1>Additional information</h1>
+                    <h1>Lorem Ipsum</h1>
                 </Typography>
                 <Typography>
-                    <p>* If you would like additional subjects to any piece that contains two pets, contact me for further information. </p>
-                    <p>* Prices listed above are for all images that are unmounted and unframes, if you would like your image mounted and framed, please contact me for a quote. </p>
-                    <p>* In addition to the sizes listed above, there are options for larger images, for further information contact me for variant sizes and prices. (x)</p>
-                    <p>* Pricing stated, do not include the delivery charges. As standard I charge £4.00 for all sizes from 11x14" to 5x7", additional charging may apply for any sizes grater then listed above. All products come securely packed, tracked and to be signed for. </p>
-                    <p>* International currency conversions available.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
                 </Typography>
             </Box>
         </Container>
