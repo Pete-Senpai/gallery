@@ -39,7 +39,7 @@ const Home = () => {
                 </Typography>
                 <Carousel>
                     <SubCategory item1={"/images/duck_pictures/duck.png"} item2={"/images/duck_pictures/duck2.jpg"} item3={"/images/duck_pictures/duck3.jpg"}></SubCategory>
-                    <SubCategory item1={"/images/duck_pictures/duck.png"} item2={"/images/duck_pictures/duck2.jpg"} item3={"/images/duck_pictures/duck3.jpg"}></SubCategory>
+                    <SubCategory item1={"/images/duck_pictures/duck.png"} item2={"/images/duck_pictures/duck3.jpg"} item3={"/images/duck_pictures/duck4.jpg"}></SubCategory>
                     <SubCategory item1={"/images/duck_pictures/duck.png"} item2={"/images/duck_pictures/duck2.jpg"} item3={"/images/duck_pictures/duck3.jpg"}></SubCategory>
                 </Carousel>
             </Box>
@@ -47,7 +47,6 @@ const Home = () => {
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
                 <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
             </HomePageBox>
             <HomePageBox header="Original Artwork" hrefLink="/original_artwork" buttonText="Original Artwork" imageSrc="/images/duck_pictures/duck.png">
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
