@@ -2,7 +2,7 @@ import { Container, Grid } from '@mui/material';
 import React from 'react';
 
 function mapPictures(context: __WebpackModuleApi.RequireContext) {
-    return context.keys().map((key) => context(key).default as string);
+    return context.keys().map((key) => context(key) as string);
 }
 const images = mapPictures(require.context("../../../public/images/duck_pictures", false, /\.(png|jpe?g|svg)$/));
 

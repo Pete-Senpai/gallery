@@ -15,7 +15,7 @@ import { Box, CssBaseline } from '@mui/material';
 const theme = createTheme(({
   palette: {
     primary: {
-      main: purple[900],
+      main: purple[400],
     },
     secondary: {
       main: purple[600],

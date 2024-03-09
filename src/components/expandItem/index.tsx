@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 function mapPictures(context: __WebpackModuleApi.RequireContext) {
-  return context.keys().map((key) => context(key).default as string);
+  return context.keys().map((key) => context(key) as string);
 }
 const images = mapPictures(require.context("../../../public/images/duck_pictures", false, /\.(png|jpe?g|svg)$/));
 
@@ -32,7 +32,7 @@ const ExpandItem: React.FC<{}> = () => {
               onClick={() => setExpanded(!expanded)}
             >
               <ExpandMoreIcon
-                sx={{ transform: "rotate(180deg)" }}
+                sx={{ transform: expanded ? "rotate(180deg)" : "rotate(0deg)" }}
               />
             </IconButton>
           </Box>
