@@ -35,7 +35,7 @@ const Home = () => {
                     Lorem Ipsum
                 </Typography>
                 <Typography align="center" fontFamily="Basic" fontSize={22} >
-                    Lorem Ipsum
+                    Cute pictures of ducks
                 </Typography>
                 <Carousel>
                     <SubCategory item1={"/images/duck_pictures/duck.png"} item2={"/images/duck_pictures/duck2.jpg"} item3={"/images/duck_pictures/duck3.jpg"}></SubCategory>
