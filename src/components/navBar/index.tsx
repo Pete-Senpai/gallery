@@ -6,10 +6,10 @@ import "@fontsource/niconne/400.css";
 
 const navLinks = [
     { title: `about`, path: `/about` },
-    { title: `original artwork`, path: `/original_artwork` },
-    { title: `pet portraits`, path: `/pet_portraits`},
+    { title: `original duck`, path: `/original_duck` },
+    { title: `purchase a duck`, path: `/purchase_a_duck`},
     { title: `gallery`, path: `/gallery` },
-    { title: `contact`, path: `/contact` }
+    { title: `random duck`, path: `/random_duck` }
 ];
 
 const NavBar = () => {

@@ -12,14 +12,14 @@ const About = () => {
                         <Card>
                             <CardMedia 
                                 component="img"
-                                image={''}
+                                image={'/images/duck_pictures/duck3.jpg'}
                                 alt="photo"
                             />
                         </Card>
                     </Grid>
                     <Grid item xs={6}>
                         <Typography align="center" borderBottom={1}>
-                            <h1>About me</h1>
+                            <h1>About ducks</h1>
                         </Typography>
                         <Typography fontFamily="Casual" fontSize={18}>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>

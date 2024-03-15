@@ -1,7 +1,7 @@
 import { Box, Container, Grid, Typography } from '@mui/material';
 import React from 'react';
 
-const PetPortraits = () => {
+const PurchaseADuck = () => {
     return (
         <Container>
             <Box m={2} pt={3} px={2} sx={{ bgcolor: '#cfe8fc', height: '600px', width: "100%", justifyContent: "center", alignItems: "center"}}>
@@ -46,7 +46,7 @@ const PetPortraits = () => {
                     </Grid>
                     <Grid item xs={7}>
                         <Typography align="center">
-                            <h1>Coloured pencil</h1>
+                            <h1>Duckies</h1>
                         </Typography>
                         <Grid container spacing={2}>
                             <Grid item xs={4}>
@@ -87,7 +87,7 @@ const PetPortraits = () => {
                 <Grid container spacing ={2}>
                     <Grid item xs={7}>
                         <Typography align="center">
-                            <h1>Graphite</h1>
+                            <h1>Ducks</h1>
                         </Typography>
                         <Grid container spacing={2}>
                             <Grid item xs={4}>
@@ -142,4 +142,4 @@ const PetPortraits = () => {
     );
 };
 
-export default PetPortraits;
+export default PurchaseADuck;

@@ -6,7 +6,7 @@ function mapPictures(context: __WebpackModuleApi.RequireContext) {
 }
 const images = mapPictures(require.context("../../../public/images/duck_pictures", false, /\.(png|jpe?g|svg)$/));
 
-const OriginalArtwork = () => {
+const OriginalDuck = () => {
     return (
         <Container>
             <Grid container spacing={3}>
@@ -20,4 +20,4 @@ const OriginalArtwork = () => {
     );
 };
 
-export default OriginalArtwork;
+export default OriginalDuck;

@@ -1,7 +1,7 @@
 import { Grid, IconButton, Box } from '@mui/material';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 
 function mapPictures(context: __WebpackModuleApi.RequireContext) {
   return context.keys().map((key) => context(key) as string);
@@ -14,31 +14,54 @@ const CarouselOne = () => {
     const imagesPerSlide = 3;
     const totalImageSets = Math.ceil(images.length / imagesPerSlide);
 
-    const nextSet = () => {
-        setCurrentImageSetIndex((prevIndex) => (prevIndex + 1) % totalImageSets);
-    };
+    const autoScrollRef = useRef<NodeJS.Timeout>();
 
-    const prevSet = () => {
+    const nextSet = useCallback(() => {
+        setCurrentImageSetIndex((prevIndex) => (prevIndex + 1) % totalImageSets);
+    }, [totalImageSets]);
+
+    const prevSet = useCallback(() => {
         setCurrentImageSetIndex((prevIndex) => {
           if (prevIndex <= 0) return totalImageSets - 1;
           return prevIndex - 1;
         });
-    };
-
-    useEffect(() => {
-      const timer = setInterval(() => {
-        nextSet();
-      }, 4000);
-
-      return () => clearInterval(timer);
     }, [totalImageSets]);
+
+    // Resets the auto-scroll timer
+    const resetAutoScroll = useCallback(() => {
+        if (autoScrollRef.current) {
+            clearInterval(autoScrollRef.current);
+        }
+        autoScrollRef.current = setInterval(nextSet, 3000);
+    }, [nextSet]);
+
+    // Set up and clear the interval for automatic transitions
+    useEffect(() => {
+        resetAutoScroll();
+        return () => {
+            if (autoScrollRef.current) {
+                clearInterval(autoScrollRef.current);
+            }
+        };
+    }, [resetAutoScroll]);
+
+    // Handle manual navigation
+    const handleNextClick = useCallback(() => {
+        nextSet();
+        resetAutoScroll();
+    }, [nextSet, resetAutoScroll]);
+
+    const handlePrevClick = useCallback(() => {
+        prevSet();
+        resetAutoScroll();
+    }, [prevSet, resetAutoScroll]);
 
     const startImageIndex = currentImageSetIndex * imagesPerSlide;
     const currentImages = images.slice(startImageIndex, startImageIndex + imagesPerSlide);
 
     return (
       <Box display="flex" alignItems="center">
-        <IconButton onClick={prevSet} aria-label="previous set">
+        <IconButton onClick={handlePrevClick} aria-label="previous set">
           <ArrowBackIosIcon />
         </IconButton>
         <Grid container spacing={3} justifyContent="center">
@@ -48,7 +71,7 @@ const CarouselOne = () => {
             </Grid>
           ))}
         </Grid>
-        <IconButton onClick={nextSet} aria-label="next set">
+        <IconButton onClick={handleNextClick} aria-label="next set">
           <ArrowForwardIosIcon />
         </IconButton>
       </Box>

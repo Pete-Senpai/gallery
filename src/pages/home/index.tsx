@@ -38,24 +38,24 @@ const Home = () => {
                     Cute pictures of ducks
                 </Typography>
                 <Carousel>
-                    <SubCategory item1={"/images/duck_pictures/duck.png"} item2={"/images/duck_pictures/duck2.jpg"} item3={"/images/duck_pictures/duck3.jpg"}></SubCategory>
+                    <SubCategory item1={"/images/duck_pictures/duck5.jpg"} item2={"/images/duck_pictures/duck2.jpg"} item3={"/images/duck_pictures/duck3.jpg"}></SubCategory>
                     <SubCategory item1={"/images/duck_pictures/duck.png"} item2={"/images/duck_pictures/duck3.jpg"} item3={"/images/duck_pictures/duck4.jpg"}></SubCategory>
                     <SubCategory item1={"/images/duck_pictures/duck.png"} item2={"/images/duck_pictures/duck2.jpg"} item3={"/images/duck_pictures/duck3.jpg"}></SubCategory>
                 </Carousel>
             </Box>
-            <HomePageBox header="Pet Portraits & Commissions" hrefLink="/pet_portraits" buttonText="See Prices" imageSrc="/images/duck_pictures/duck.png" isReversed>
+            <HomePageBox header="Purchase a duck" hrefLink="/purchase_a_duck" buttonText="See Prices" imageSrc="/images/duck_pictures/duck.png" isReversed>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
                 <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
             </HomePageBox>
-            <HomePageBox header="Original Artwork" hrefLink="/original_artwork" buttonText="Original Artwork" imageSrc="/images/duck_pictures/duck.png">
+            <HomePageBox header="Original Duck" hrefLink="/original_duck" buttonText="Original Duck" imageSrc="/images/duck_pictures/duck2.jpg">
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
             </HomePageBox>
-            <HomePageBox header="Gallery" hrefLink="/gallery" buttonText="Gallery" imageSrc="/images/duck_pictures/duck.png" isReversed>
+            <HomePageBox header="Gallery" hrefLink="/gallery" buttonText="Gallery" imageSrc="/images/duck_pictures/duck3.jpg" isReversed>
                 <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
             </HomePageBox>
-            <HomePageBox header="Prints" hrefLink="/pet_portraits" buttonText="See Prices" imageSrc="/images/duck_pictures/duck.png">
+            <HomePageBox header="Random duck of the day" hrefLink="/random_duck" buttonText="Duck today" imageSrc="/images/duck_pictures/duck4.jpg">
                 <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
                 
             </HomePageBox>

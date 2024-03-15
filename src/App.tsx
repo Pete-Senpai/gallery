@@ -4,10 +4,10 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { purple } from '@mui/material/colors';
 import Home from 'pages/home';
 import Gallery from 'pages/gallery';
-import Contact from 'pages/contact';
+import RandomDuck from 'pages/random_duck';
 import About from 'pages/about';
-import OriginalArtwork from 'pages/original_artwork';
-import PetPortraits from 'pages/pet_portraits';
+import OriginalDuck from 'pages/original_duck';
+import PurchaseADuck from 'pages/purchase_a_duck';
 import NavBar from 'components/navBar';
 import Footer from 'components/footer';
 import { Box, CssBaseline } from '@mui/material';
@@ -34,10 +34,10 @@ const App = () => {
               <Switch>
                 <Route path='/' exact component={Home} />
                 <Route path='/about' exact component={About} />
-                <Route path='/original_artwork' exact component={OriginalArtwork} />
-                <Route path='/pet_portraits' exact component={PetPortraits} />
+                <Route path='/original_duck' exact component={OriginalDuck} />
+                <Route path='/purchase_a_duck' exact component={PurchaseADuck} />
                 <Route path='/gallery' exact component={Gallery} />
-                <Route path='/contact' exact component={Contact} />
+                <Route path='/random_duck' exact component={RandomDuck} />
               </Switch>
             </Box>
             <Footer />
